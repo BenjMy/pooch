@@ -5,7 +5,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
@@ -109,13 +110,13 @@
               
             
             
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="retrieve.html">Retrieving a data file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="citing.html">Citing Pooch</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Training your Pooch</span></p>
+<p><span class="caption-text">Training your Pooch</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="beginner.html">Beginner tricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="intermediate.html">Intermediate tricks</a></li>
@@ -128,7 +129,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">Reference Documentation</span></p>
+<p><span class="caption-text">Reference Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="api/index.html">API Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changes.html">Changelog</a></li>
@@ -224,7 +225,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="processors">
+  <section id="processors">
 <span id="id1"></span><h1>Processors<a class="headerlink" href="#processors" title="Permalink to this headline">¶</a></h1>
 <p>Post-download actions sometimes need to be taken on downloaded files
 (unzipping, conversion to a more efficient format, etc). If these actions are
@@ -264,7 +265,7 @@ downloaded file. The processor lets us intercept the returned path, perform
 actions, and possibly return a different path.</p>
 <p>Pooch provides built-in processors for common tasks, like decompressing files
 and unpacking tar and zip archives. See the <a class="reference internal" href="api/index.html#api"><span class="std std-ref">API Reference</span></a> for a full list.</p>
-<div class="section" id="unpacking-archives">
+<section id="unpacking-archives">
 <h2>Unpacking archives<a class="headerlink" href="#unpacking-archives" title="Permalink to this headline">¶</a></h2>
 <p>Let’s say our data file is actually a zip (or tar) archive with a collection of files.
 We may want to store an unpacked version of the archive or extract just a
@@ -303,8 +304,8 @@ and <a class="reference internal" href="api/generated/pooch.Untar.html#pooch.Unt
 </div>
 <p>Use <a class="reference internal" href="api/generated/pooch.Untar.html#pooch.Untar" title="pooch.Untar"><code class="xref py py-class docutils literal notranslate"><span class="pre">pooch.Untar</span></code></a> to do the exact same for tar archives (with optional
 compression).</p>
-</div>
-<div class="section" id="decompressing">
+</section>
+<section id="decompressing">
 <h2>Decompressing<a class="headerlink" href="#decompressing" title="Permalink to this headline">¶</a></h2>
 <p>If you have a compressed file that is not an archive (zip or tar), you can use
 <a class="reference internal" href="api/generated/pooch.Decompress.html#pooch.Decompress" title="pooch.Decompress"><code class="xref py py-class docutils literal notranslate"><span class="pre">pooch.Decompress</span></code></a> to decompress it after download. For example, large
@@ -350,8 +351,8 @@ file name instead:</p>
 a file already exists with the specified name it will be overwritten with
 the new decompressed file content. <strong>Use this option with caution.</strong></p>
 </div>
-</div>
-<div class="section" id="custom-processors">
+</section>
+<section id="custom-processors">
 <h2>Custom processors<a class="headerlink" href="#custom-processors" title="Permalink to this headline">¶</a></h2>
 <p>Let’s say we want to implement the <a class="reference internal" href="api/generated/pooch.Unzip.html#pooch.Unzip" title="pooch.Unzip"><code class="xref py py-class docutils literal notranslate"><span class="pre">pooch.Unzip</span></code></a> processor ourselves to
 extract a single file from the archive. We could do that with the following
@@ -424,8 +425,8 @@ which can be fixed when the file is downloaded.</p></li>
 performed only when the file is downloaded. A modified version of the file can
 be kept on disk so that loading the file is easier. This is particularly
 convenient if the processor task takes a long time to run.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -448,9 +449,9 @@ convenient if the processor task takes a long time to run.</p>
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2018-2020, The Pooch Developers.
+        &copy; Copyright 2018-2021, The Pooch Developers.
       <span class="lastupdated">
-        Last updated on Nov 27, 2020.
+        Last updated on Apr 14, 2021.
       </span>
 
     </p>
